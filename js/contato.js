@@ -55,7 +55,7 @@ class FormSubmit {
       return this;
     }
 }
-  
+
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",

@@ -67,6 +67,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0px 1px 5px rgba(79, 79, 79, 0.898);
+  margin-top: 10px;
 }
 
 button:hover,
@@ -86,11 +87,13 @@ button:disabled {
 }
 
 .success {
-  color: #fbff1b;
+  color: #6fff1b;
+  margin-top: 100px;
 }
 
 .error {
   color: #e22f0f;
+  margin-top: 100px;
 }
 
 .textoContato {
@@ -101,13 +104,14 @@ button:disabled {
 }
 
 .textoContato h1 {
+  margin-top: -20px;
     color: aliceblue;
     font-size: 37px;
     font-weight: 700;
 }
 
 .textoContato p {
-    color: #fbff1b;
-    font-size: 20px;
-    margin-top: 10px;
+  color: #fbff1b;
+  font-size: 20px;
+  margin-top: 10px;
 }
