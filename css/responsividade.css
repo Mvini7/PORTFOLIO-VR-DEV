@@ -223,4 +223,21 @@
     .alguns-servicos .suporte h4 {
         margin-top: 6px;
     }
+
+    .contato .textoContato h1 {
+        font-size: 25px;
+    }
+
+    .contato form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contato form input,
+    .contato form textarea,
+    .contato form button {
+        width: 350px;
+    }
 }
