@@ -84,29 +84,29 @@
         display: flex;
         align-items: baseline;
         flex-direction: column;
-        justify-content: end;
-        width: 420px;
+        justify-content: baseline;
+        width:410px;
     }
 
     .textoSobre .sobreMim h1 {
         font-size: 30px;
-        margin-left:15px;
+        margin-left: -185px;
     }
 
     .textoSobre .sobreMim h3 {
         margin-top: 5px;
         font-size: 20px;
-        margin-left: 15px;
+        margin-left: -185px;
     }
 
     .textoSobre .sobreMim p {
         width: 400px;
         font-size: 14px;
-        margin-left: 15px;
+        margin-left: -185px;
     }
 
     .skills .soft-skills h3 {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 23px;
         margin-left: -185px;
     }
@@ -148,7 +148,7 @@
     }
 
     .skills .hard-skills {
-        margin-top: -25px;
+        margin-top: -20px;
         margin-left: -185px;
     }
 
