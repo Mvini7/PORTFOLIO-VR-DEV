@@ -6,3 +6,15 @@ document.querySelectorAll('header li a').forEach(anchor => {
         });
     });
 });
+
+document.querySelectorAll('button[data-target]').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('data-target'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
