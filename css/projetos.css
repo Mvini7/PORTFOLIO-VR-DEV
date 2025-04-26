@@ -197,6 +197,19 @@
   background-color: white;
 }
 
+.links {
+    display: flex;
+    padding: 15px 0px;
+    gap: 18px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #091aff;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .card {
