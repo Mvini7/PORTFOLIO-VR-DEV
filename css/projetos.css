@@ -8,19 +8,11 @@
   flex-direction: column;
 }
 
-.alguns-projetos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  gap: 5rem;
-}
-
 .texto-projetos {
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: -100px;
 }
 
@@ -34,6 +26,14 @@
   color: #fbff1b;
   font-size: 20px;
   margin-top: 10px;
+}
+
+.alguns-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 5rem;
 }
 
 .card {
