@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  gap: 5rem;
 }
 
 .projetos .texto {
@@ -284,5 +285,272 @@
   .indicator {
     width: 8px;
     height: 8px;
+  }
+}
+
+.item-container {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #151515;
+  box-shadow: 0px 1px 5px rgba(43, 43, 43, 0.898);
+  transition: transform 0.3s ease;
+}
+
+.item-container:hover {
+  transform: translateY(-5px);
+}
+
+.item-picture {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item-picture:hover img {
+  transform: scale(1.05);
+}
+
+.item-info {
+  padding: 20px;
+}
+
+.item-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffffff;
+}
+
+.item-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Estilos do Slider */
+.slider-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 80vh;
+  max-height: 600px;
+}
+
+.slider-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item.visible {
+  opacity: 1;
+}
+
+.slider-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+}
+
+.control-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.exit-btn {
+  position: absolute;
+  top: 20px;
+  width: 50rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot-indicator.current {
+  background-color: white;
+}
+
+.item-info .links {
+  display: flex;
+  padding: 15px 0px;
+  gap: 18px;
+}
+
+.item-info .links a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: #091aff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .item-container {
+    max-width: 300px;
+  }
+
+  .item-picture {
+    height: 180px;
+  }
+
+  .slider {
+    width: 95%;
+    height: 70vh;
+  }
+
+  .control-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .exit-btn {
+    display: none;
+  }
+
+  .dot-indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-container {
+    max-width: 280px;
+  }
+
+  .item-picture {
+    height: 160px;
+  }
+
+  .item-info {
+    padding: 15px;
+  }
+
+  .item-heading {
+    font-size: 16px;
+  }
+
+  .item-text {
+    font-size: 13px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .control-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .slider-controls {
+    padding: 0 10px;
+  }
+
+  .exit-btn {
+    display: none;
+  }
+
+  .dot-indicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* RESPONSIVIDADE DOS CARDS */
+
+@media (max-width: 768px) {
+  .projetos {
+    height: 70rem;
+  }
+  
+  .alguns-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
