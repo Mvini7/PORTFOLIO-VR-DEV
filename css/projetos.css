@@ -16,7 +16,7 @@
   gap: 5rem;
 }
 
-.projetos .texto {
+.texto-projetos {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,13 +24,13 @@
   margin-top: -100px;
 }
 
-.texto h1 {
+.texto-projetos h1 {
   color: aliceblue;
   font-size: 35px;
   font-weight: 800;
 }
 
-.texto p {
+.texto-projetos p {
   color: #fbff1b;
   font-size: 20px;
   margin-top: 10px;
@@ -545,6 +545,10 @@
 @media (max-width: 768px) {
   .projetos {
     height: 70rem;
+  }
+
+  .texto-projetos {
+    margin-top: 0;
   }
   
   .alguns-projetos {
