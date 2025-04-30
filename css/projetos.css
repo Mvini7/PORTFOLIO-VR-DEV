@@ -344,6 +344,15 @@
 }
 
 @media (max-width: 768px) {
+  .projetos {
+    height: 70rem;
+  }
+
+  .alguns-projetos {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .projeto-card {
     max-width: 100%;
     width: 90%;
