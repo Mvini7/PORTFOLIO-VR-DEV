@@ -40,6 +40,13 @@ textarea {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.form-contato textarea,
+#mensagem,
+textarea[name="mensagem"],
+.contact-form textarea {
+  resize: none;
+}
+
 input:hover,
 input:focus,
 textarea:hover,
