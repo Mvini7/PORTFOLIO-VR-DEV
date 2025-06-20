@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Outfit:wght@100..900&display=swap");
 
+/* Impede rolagem horizontal */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  max-width: 100vw;
 }

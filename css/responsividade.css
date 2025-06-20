@@ -85,11 +85,11 @@
         align-items: baseline;
         flex-direction: column;
         justify-content: baseline;
-        width:410px;
+        width: 410px;
     }
 
     .textoSobre .sobreMim h1 {
-        font-size: 30px;
+        font-size: 27px;
         margin-left: -185px;
     }
 
@@ -100,13 +100,13 @@
     }
 
     .textoSobre .sobreMim p {
-        width: 400px;
-        font-size: 14px;
+        width: 350px;
+        font-size: 13px;
         margin-left: -185px;
     }
 
     .skills .soft-skills h3 {
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 23px;
         margin-left: -185px;
     }
@@ -148,7 +148,7 @@
     }
 
     .skills .hard-skills {
-        margin-top: -20px;
+        margin-top: -27px;
         margin-left: -185px;
     }
 
@@ -240,82 +240,4 @@
     .contato form button {
         width: 350px;
     }
-
-      @media (max-width: 768px) {
-    .card {
-      max-width: 300px;
-    }
-  
-    .card-image {
-      height: 180px;
-    }
-  
-    .carousel {
-      width: 95%;
-      height: 70vh;
-    }
-  
-    .carousel-button {
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
-    }
-  
-    .close-button {
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
-    }
-  
-    .indicator {
-      width: 10px;
-      height: 10px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      max-width: 280px;
-    }
-  
-    .card-image {
-      height: 160px;
-    }
-  
-    .card-content {
-      padding: 15px;
-    }
-  
-    .card-title {
-      font-size: 16px;
-    }
-  
-    .card-description {
-      font-size: 13px;
-    }
-  
-    .carousel {
-      width: 100%;
-      height: 60vh;
-    }
-  
-    .carousel-button {
-      width: 36px;
-      height: 36px;
-      font-size: 16px;
-    }
-  
-    .carousel-nav {
-      padding: 0 10px;
-    }
-  
-    .close-button {
-      font-size: 22px;
-    }
-  
-    .indicator {
-      width: 8px;
-      height: 8px;
-    }
-  }
 }
