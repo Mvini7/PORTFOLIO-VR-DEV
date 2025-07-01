@@ -1,383 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR DEV - Vinicius Rodrigues | Desenvolvedor Front End</title>
+
+    <!-- Bootstrap 5 CSS -->
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/particles-js.css" />
-    <link rel="stylesheet" href="./css/tecnologias.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/rolagemEfeito.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/responsividade.css" />
-    <link rel="stylesheet" href="./css/sobre.css" />
-    <link rel="stylesheet" href="./css/servicos.css" />
-    <link rel="stylesheet" href="./css/contato.css" />
-    <link rel="stylesheet" href="./css/projetos.css" />
-    <title>VR DEV</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="./img/logo.png" alt="LOGO" />
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold fs-3" href="#home">
+          <span class="text-primary">VR</span> DEV
+        </a>
 
-      <div class="menu" id="menu-toggle">
-        <i class="bx bx-menu" style="color: #ffffff"></i>
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth-scroll" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <ul id="menu-links">
-        <li><a href=".main">Inicio</a></li>
-        <li><a href=".sobre">Sobre</a></li>
-        <li><a href=".servicos">Serviços</a></li>
-        <li><a href=".projetos">Projetos</a></li>
-        <li><a href=".contato">Contato</a></li>
-      </ul>
-    </header>
-
-    <section class="main">
-      <!-- particles.js container -->
-      <div id="particles-js"></div>
-      <!-- stats - count particles -->
-
-      <div class="inicio">
-        <div class="textoInicio">
-          <div class="caixasTexto">
-            <h1>VINICIUS RODRIGUES</h1>
-
-            <p>DESENVOLVEDOR FRONT-END</p>
-
-            <div class="btns">
-              <button data-target=".projetos">Alguns Projetos</button>
-              <button data-target=".contato">Contato</button>
+    <!-- Seção Home -->
+    <section
+      id="home"
+      class="min-h-screen d-flex align-items-center bg-gradient-to-br from-blue-50 to-indigo-100"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="display-4 fw-bold mb-4 fade-in">
+                Olá, eu sou <br />
+                <span class="text-primary">Vinicius Rodrigues</span>
+              </h1>
+              <h2 class="h4 text-muted mb-4 fade-in-delay">
+                Desenvolvedor Front End
+              </h2>
+              <p class="lead mb-5 fade-in-delay-2">
+                Transformo ideias em experiências digitais incríveis.
+                Especializado em criar interfaces modernas, responsivas e
+                intuitivas.
+              </p>
+              <button
+                class="btn btn-primary btn-lg px-5 py-3 smooth-scroll cta-button"
+                data-target="#projetos"
+              >
+                <i class="fas fa-rocket me-2"></i>
+                Ver Projetos
+              </button>
             </div>
           </div>
-
-          <div class="avatar">
-            <img src="./img/avatar.png" alt="AVATAR" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sobre">
-      <div class="textoSobre">
-        <div class="sobreMim item">
-          <h1>UM POUCO SOBRE MIM...</h1>
-
-          <h3>Olá, me chamo Vinicius Rodrigues.</h3>
-
-          <p>
-            Sou um desenvolvedor front-end apaixonado por transformar ideias em
-            experiências digitais excepcionais. Com uma sólida experiência em
-            desenvolvimento web, domino as principais tecnologias como HTML,
-            CSS, JavaScript e PHP, além de trabalhar com bibliotecas e
-            frameworks populares, como Bootstrap e Tailwind, para criar
-            interfaces responsivas e visualmente impactantes. Tenho também ampla
-            experiência no uso de ferramentas de versionamento, como Git e
-            GitHub, para garantir um fluxo de trabalho eficiente e colaborativo.
-            <br />
-            <br />
-            Meu trabalho vai além da codificação: como desenvolvedor criativo,
-            meu foco é entender as necessidades do cliente e entregar soluções
-            que resolvam problemas reais, combinando criatividade e técnica para
-            entregar resultados de alta qualidade. Se você busca inovação,
-            funcionalidade e design, posso ajudar a transformar sua visão em
-            realidade.
-          </p>
-        </div>
-
-        <div class="skills">
-          <div class="soft-skills">
-            <h3 class="item">SOFT SKILLS</h3>
-
-            <div class="algumas-softSkills item">
-              <div class="grupo1">
-                <div class="comunicacao">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Comunicação</p>
-                </div>
-
-                <div class="criatividade">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Criatividade</p>
-                </div>
-
-                <div class="resolucao">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Resolução</p>
-                </div>
-
-                <div class="adaptabilidade">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Adaptabilidade</p>
-                </div>
-              </div>
-
-              <div class="grupo2">
-                <div class="detalhismo">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Detalhismo</p>
-                </div>
-
-                <div class="pontualidade">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Pontualidade</p>
-                </div>
-
-                <div class="colaboracao">
-                  <i
-                    class="bx bxs-chevrons-left bx-rotate-180"
-                    style="color: #fbff1b"
-                  ></i>
-                  <p>Colaboração</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hard-skills">
-            <h3 class="item">HARDS SKILLS</h3>
-
-            <div class="algumas-hardSkills item">
-              <div class="hard-skills1">
-                <div class="html">
-                  <i class="bx bxl-html5" style="color: #ffffff"></i>
-                  <p>HTML5</p>
-                </div>
-
-                <div class="css">
-                  <i class="bx bxl-css3" style="color: #ffffff"></i>
-                  <p>CSS3</p>
-                </div>
-
-                <div class="javascript">
-                  <i class="bx bxl-javascript" style="color: #ffffff"></i>
-                  <p>JavaScript</p>
-                </div>
-
-                <div class="php">
-                  <i class="bx bxl-php" style="color: #ffffff"></i>
-                  <p>PHP</p>
-                </div>
-              </div>
-
-              <div class="hard-skills2 item">
-                <div class="bootstrap">
-                  <i class="bx bxl-bootstrap" style="color: #ffffff"></i>
-                  <p>Bootstrap</p>
-                </div>
-
-                <div class="tailwind">
-                  <i class="bx bxl-tailwind-css" style="color: #ffffff"></i>
-                  <p>Tailwind</p>
-                </div>
-
-                <div class="git">
-                  <i class="bx bxl-git" style="color: #ffffff"></i>
-                  <p>GIT</p>
-                </div>
-
-                <div class="github">
-                  <i class="bx bxl-github" style="color: #ffffff"></i>
-                  <p>GitHub</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="servicos">
-      <div class="texto item">
-        <h1>EXPLORE MEUS SERVIÇOS</h1>
-        <p>Como eu posso te ajudar?</p>
-      </div>
-
-      <div class="alguns-servicos item">
-        <div class="desenvolvimento">
-          <i class="bx bxs-pointer" style="color: #ffffff"></i>
-          <h4>DESENVOLVIMENTO</h4>
-          <p>
-            Crio seu site profissional, atraente e otimizado para destacar sua
-            marca e conquistar mais clientes, e dar ao seu cliente um ambiente
-            web profissional e confíavel.
-          </p>
-        </div>
-
-        <div class="personalizacao">
-          <i class="bx bxs-edit-alt" style="color: #ffffff"></i>
-          <h4>PERSONALIZAÇÃO</h4>
-          <p>
-            Faço a personalização necessaria para para alinhar seu site e
-            deixa-lo com as especificações necessarias para seu negócio.
-          </p>
-        </div>
-
-        <div class="suporte">
-          <i class="bx bx-support" style="color: #ffffff"></i>
-          <h4>SUPORTE</h4>
-          <p>
-            Suporte confíavel para manter seu site sempre atualizado de acordo
-            com seu negócio e solucionar problemas para manter seu site sempre
-            operacional e eficiente.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="projetos">
-      <div class="texto-projetos item">
-        <h1>ALGUNS PROJETOS</h1>
-        <p>Veja a qualidade dos meus projetos!</p>
-      </div>
-
-      <div class="alguns-projetos">
-        <!-- Projeto 1 - Novo Carrossel -->
-        <div class="projeto1 item">
-          <div class="card-projeto1">
-            <div class="imagem-projeto1">
+          <div class="col-lg-6 text-center">
+            <div class="hero-image">
               <img
-                src="img/projetos/projeto2/img-principal.png"
-                alt="mycardtech"
+                src="img/avatar.png"
+                alt="Desenvolvedor trabalhando"
+                class="img-fluid rounded-circle shadow-lg"
               />
             </div>
-
-            <div class="textos-projeto1">
-              <h1>MyCardtech</h1>
-              <p>
-                Projeto de site institucional. Feito utilizando HTML, CSS e JS.
-                Projeto completo com responsividade.
-              </p>
-
-              <div class="links-projetos">
-                <a
-                  href="https://landing-page-mycardtech.vercel.app/"
-                  class="card-link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                  Site do projeto
-                </a>
-                <a
-                  href="https://github.com/Mvini7/LANDING-PAGE-MYCARDTECH"
-                  class="card-link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                    ></path>
-                  </svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
           </div>
         </div>
-        <!-- Projeto 2 - Novo Carrossel -->
-        <div class="projeto2 item">
-          <div class="card-projeto2">
-            <div class="imagem-projeto2">
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <div class="profile-image">
               <img
-                src="img/projetos/projeto1/img-principal.png"
-                alt="industrias wayne"
+                src="img/logo.png"
+                alt="Vinicius Rodrigues"
+                class="img-fluid rounded-circle shadow-lg"
               />
             </div>
-
-            <div class="textos-projeto2">
-              <h1>Industrias Wayne</h1>
-              <p>
-                Projeto final do meu curso de programação. Foi feito utilizando
-                HTML, CSS, JS, TAILWIND e JSON.
+          </div>
+          <div class="col-lg-8">
+            <div class="about-content">
+              <h2 class="display-5 fw-bold mb-4">
+                Sobre <span class="text-primary">Mim</span>
+              </h2>
+              <p class="lead mb-4">
+                Sou um desenvolvedor Front End apaixonado por criar experiências
+                digitais que fazem a diferença. Com foco em código limpo e
+                design intuitivo, trabalho para transformar conceitos em
+                realidade digital.
+              </p>
+              <p class="mb-4">
+                Minha jornada no desenvolvimento web me permitiu dominar as
+                principais tecnologias do mercado, sempre buscando as melhores
+                práticas e mantendo-me atualizado com as tendências mais
+                recentes.
               </p>
 
-              <div class="links-projetos">
-                <a
-                  href="https://industrias-wayne.vercel.app/"
-                  class="card-link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                    ></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                  Site do projeto
-                </a>
-                <a
-                  href="https://github.com/Mvini7/Industrias-Wayne"
-                  class="card-link"
-                  target="_blank"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                    ></path>
-                  </svg>
-                  GitHub
-                </a>
+              <!-- Tecnologias -->
+              <h4 class="fw-semibold mb-3">Tecnologias que domino:</h4>
+              <div class="row g-3">
+                <div class="col-6 col-md-4">
+                  <div class="tech-item">
+                    <i class="fab fa-html5 text-danger fs-2"></i>
+                    <span class="d-block mt-2 fw-medium">HTML5</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tech-item">
+                    <i class="fab fa-css3-alt text-primary fs-2"></i>
+                    <span class="d-block mt-2 fw-medium">CSS3</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tech-item">
+                    <i class="fab fa-js-square text-warning fs-2"></i>
+                    <span class="d-block mt-2 fw-medium">JavaScript</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tech-item">
+                    <i class="fab fa-bootstrap text-purple fs-2"></i>
+                    <span class="d-block mt-2 fw-medium">Bootstrap</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tech-item">
+                    <i class="fas fa-wind text-cyan fs-2"></i>
+                    <span class="d-block mt-2 fw-medium">Tailwind CSS</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="tech-item">
+                    <i class="fab fa-git-alt text-orange fs-2"></i>
+                    <span class="d-block mt-2 fw-medium">Git</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -385,48 +191,339 @@
       </div>
     </section>
 
-    <section class="contato">
-      <div class="textoContato">
-        <h1 class="item">ENTRE EM CONTATO</h1>
-        <p class="item">Envie sua mensagem e aguarde o retorno.</p>
+    <!-- Seção Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3">
+            Meus <span class="text-primary">Serviços</span>
+          </h2>
+          <p class="lead text-muted">
+            Soluções completas em desenvolvimento web para seu negócio
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Serviço 1: Sites Personalizados -->
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card h-100">
+              <div class="service-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h4 class="service-title">Sites Personalizados</h4>
+              <p class="service-description">
+                Desenvolvimento de sites únicos e sob medida, criados
+                especialmente para atender suas necessidades e refletir a
+                identidade da sua marca.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Design exclusivo
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Identidade
+                  visual
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Funcionalidades
+                  customizadas
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Serviço 2: Sites Otimizados -->
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card h-100">
+              <div class="service-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h4 class="service-title">Sites Otimizados</h4>
+              <p class="service-description">
+                Sites com alta performance, otimizados para SEO e velocidade de
+                carregamento, garantindo melhor posicionamento no Google.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>SEO otimizado
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Carregamento
+                  rápido
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Google Analytics
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Serviço 3: Soluções Econômicas -->
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card h-100">
+              <div class="service-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h4 class="service-title">Soluções Econômicas</h4>
+              <p class="service-description">
+                Sites profissionais com excelente custo-benefício, ideais para
+                pequenos negócios e empreendedores que estão começando.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Preço acessível
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Qualidade
+                  garantida
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Entrega rápida
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Serviço 4: Suporte Técnico -->
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card h-100">
+              <div class="service-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4 class="service-title">Suporte Técnico</h4>
+              <p class="service-description">
+                Suporte contínuo e manutenção do seu site, garantindo que tudo
+                funcione perfeitamente e esteja sempre atualizado.
+              </p>
+              <ul class="service-features">
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Suporte 24/7
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Atualizações
+                  regulares
+                </li>
+                <li>
+                  <i class="fas fa-check text-success me-2"></i>Backup
+                  automático
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-5">
+          <div class="cta-container">
+            <h3 class="fw-bold mb-3">Pronto para começar seu projeto?</h3>
+            <p class="lead mb-4">
+              Entre em contato e vamos transformar suas ideias em realidade
+              digital!
+            </p>
+            <button
+              class="btn btn-primary btn-lg px-5 py-3 smooth-scroll"
+              data-target="#contato"
+            >
+              <i class="fas fa-calculator me-2"></i>
+              Faça agora o orçamento do seu site
+            </button>
+          </div>
+        </div>
       </div>
-
-      <form
-        class="item"
-        action="https://formsubmit.co/ajax/contatovrdev@gmail.com"
-        method="POST"
-        data-form
-      >
-        <div class="nome">
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" required />
-        </div>
-
-        <div class="email">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-
-        <div class="numero">
-          <label for="numero">Numero para contato</label>
-          <input type="number" name="numero" id="numero" required />
-        </div>
-
-        <div class="mensagem">
-          <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" required></textarea>
-        </div>
-
-        <button type="submit" data-button>Enviar</button>
-      </form>
     </section>
 
-    <script src="./js/rolagemEfeito.js"></script>
-    <script src="./js/particulas.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/direcionamento.js"></script>
-    <script src="./js/contato.js"></script>
-    <script src="js/projetos.js"></script>
+    <!-- Seção Projetos -->
+    <section id="projetos" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold mb-3">
+            Meus <span class="text-primary">Projetos</span>
+          </h2>
+          <p class="lead text-muted">
+            Alguns dos trabalhos que desenvolvi recentemente
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Projeto 1 -->
+          <div class="col-lg-6">
+            <div class="card project-card h-100 border-0 shadow-sm">
+              <div class="card-img-top project-image">
+                <img
+                  src="img/projetos/projeto1.png"
+                  alt="Industrias wayne"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-bold mb-3">Industrias Wayne</h5>
+                <p class="card-text text-muted mb-4">
+                  Plataforma de gestão de empresa ficticia, feito para gerenciar
+                  cada setor da empresa. A plataforma é completa, com
+                  responsividade e validação de login e back-end. Feito
+                  utilizando HTML, CSS, JavaScript e JSON.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="tech-tags">
+                    <span class="badge bg-primary me-1">HTML</span>
+                    <span class="badge bg-info me-1">CSS</span>
+                    <span class="badge bg-warning">JS</span>
+                  </div>
+                  <a
+                    href="https://industrias-wayne.vercel.app/"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    <i class="fas fa-external-link-alt me-1"></i>
+                    Ver Projeto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="col-lg-6">
+            <div class="card project-card h-100 border-0 shadow-sm">
+              <div class="card-img-top project-image">
+                <img
+                  src="img/projetos/projeto2.png"
+                  alt="MyCardtech"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body p-4">
+                <h5 class="card-title fw-bold mb-3">MyCardtech</h5>
+                <p class="card-text text-muted mb-4">
+                  Landing Page para uma empresa de cartões de visitas
+                  inteligentes. O site é totalmente responsivo, mordeno e
+                  otimizado. Feito utilizando HTML, CSS, JavaScript.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="tech-tags">
+                    <span class="badge bg-primary me-1">HTML</span>
+                    <span class="badge bg-info me-1">Bootstrap</span>
+                    <span class="badge bg-warning">JS</span>
+                  </div>
+                  <a href="https://mycardtech.vercel.app/" class="btn btn-outline-primary btn-sm">
+                    <i class="fas fa-external-link-alt me-1"></i>
+                    Ver Projeto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="contact-content">
+              <h2 class="display-5 fw-bold mb-4">
+                Vamos <span class="text-primary">Conversar</span>?
+              </h2>
+              <p class="lead text-muted mb-4">
+                Transforme sua ideia em realidade digital!
+              </p>
+              <p class="fs-5 mb-5 text-dark">
+                Entre em contato comigo pelo WhatsApp e vamos discutir seu
+                projeto. Respondo rapidamente e estou sempre disponível para
+                tirar suas dúvidas e criar a solução perfeita para o seu
+                negócio.
+              </p>
+
+              <div class="contact-features mb-5">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="feature-item">
+                      <i class="fas fa-clock text-primary fs-2 mb-3"></i>
+                      <h5 class="fw-semibold">Resposta Rápida</h5>
+                      <p class="text-muted mb-0">Respondo em até 2 horas</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="feature-item">
+                      <i class="fas fa-handshake text-primary fs-2 mb-3"></i>
+                      <h5 class="fw-semibold">Consultoria Gratuita</h5>
+                      <p class="text-muted mb-0">Primeira conversa sem custo</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="feature-item">
+                      <i class="fas fa-shield-alt text-primary fs-2 mb-3"></i>
+                      <h5 class="fw-semibold">Garantia Total</h5>
+                      <p class="text-muted mb-0">Satisfação garantida</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="whatsapp-cta">
+                <h3 class="fw-bold mb-3 text-dark">Pronto para começar?</h3>
+                <p class="mb-4 text-muted">
+                  Clique no botão abaixo e vamos conversar sobre seu projeto!
+                </p>
+
+                <a
+                  href="https://wa.me/5511999999999?text=Olá! Vim através do seu portfólio e gostaria de conversar sobre um projeto."
+                  target="_blank"
+                  class="btn btn-success btn-lg px-5 py-3 whatsapp-btn"
+                >
+                  <i class="fab fa-whatsapp me-2 fs-4"></i>
+                  Falar no WhatsApp
+                </a>
+
+                <p class="mt-3 text-muted small">
+                  <i class="fas fa-phone me-1"></i>
+                  +55 (11) 99999-9999
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2024 VR DEV - Vinicius Rodrigues. Todos os direitos
+              reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Customizado -->
+    <script src="script.js"></script>
   </body>
 </html>
