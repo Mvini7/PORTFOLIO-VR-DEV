@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../Downloads/vr-dev-portfolio/img"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Portifolio"
+  }
+}
